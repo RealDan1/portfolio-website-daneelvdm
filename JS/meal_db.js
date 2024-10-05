@@ -1,6 +1,5 @@
 // Define Order class with properties for description, order number, and completion status
 // =====================================================
-// (My task reviewer said I should start getting used to using classes and experiment with them)
 class Order {
   constructor(description, orderNumber, completionStatus) {
     this.description = description;
