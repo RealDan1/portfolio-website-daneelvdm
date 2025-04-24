@@ -126,8 +126,11 @@
               API authentication, filtering, and a favorites system. RESTful API integration with Axios and a scalable
               React frontend. Refer to README for installation.
             </p>
-            <a href="https://itunes-search-9vbj.onrender.com" class="btn" target="_blank">View Project</a>
-            <a href="./Downloads/itunes-search.zip" class="btn" download="itunes-search.zip">Download Zip</a>
+            <div class="btn-container">
+              <a href="https://itunes-search-9vbj.onrender.com" class="btn" target="_blank">View Project</a>
+              <a href="https://github.com/RealDan1/itunes-search-backend" target="_blank" class="btn"> Backend Repo </a>
+              <a href="https://github.com/RealDan1/itunes-search" class="btn" target="_blank"> Frontend Repo</a>
+            </div>
           </div>
           <div class="portfolio-item">
             <h3>Car Management System</h3>
@@ -136,14 +139,15 @@
               supports CRUD operations and demonstrates secure and efficient API integration. Refer to README for
               installation.
             </p>
-            <a href="https://mongodb-auto-k6sr.onrender.com/" class="btn" target="_blank">View Project</a>
-            <a
-              href="#"
-              class="btn"
-              onclick="openTwoRepos('https://github.com/RealDan1/car-management-db-backend','https://github.com/RealDan1/car-management-database');return false;"
-            >
-              GitHub Repos
-            </a>
+            <div class="btn-container">
+              <a href="https://mongodb-auto-k6sr.onrender.com/" class="btn" target="_blank">View Project</a>
+              <a href="https://github.com/RealDan1/car-management-db-backend" class="btn" target="_blank">
+                Backend Repo
+              </a>
+              <a href="https://github.com/RealDan1/car-management-database" class="btn" target="_blank">
+                Frontend Repo</a
+              >
+            </div>
           </div>
           <div class="portfolio-item">
             <h3>Redux To-Do App</h3>
@@ -152,7 +156,10 @@
               editing, Bootstrap styling, and real-time updates. The app showcases advanced usage of Redux slices and
               modular component design.
             </p>
-            <a href="https://redux-to-do-lemon.vercel.app" class="btn" target="_blank">View Project</a>
+            <div class="btn-container">
+              <a href="https://redux-to-do-lemon.vercel.app" class="btn" target="_blank">View Project</a>
+              <a href="https://github.com/RealDan1/redux-to-do" class="btn" target="_blank">Github Repo</a>
+            </div>
             <!-- redux-to-do-lemon.vercel.app
  -->
           </div>
@@ -162,8 +169,10 @@
               An eCommerce platform built with React.js. Includes dynamic product management, secure user registration,
               login validation with Formik, and a responsive UI styled with Bootstrap and Vanilla CSS.
             </p>
-            <a href="https://reactmart.onrender.com" class="btn" target="_blank">View Project</a>
-            <a href="./Downloads/ReactMart.zip" class="btn" download="ReactMart.zip">Download Zip</a>
+            <div class="btn-container">
+              <a href="https://reactmart.onrender.com" class="btn" target="_blank">View Project</a>
+              <a href="https://github.com/RealDan1/react-mart" class="btn" target="_blank">Github Repo</a>
+            </div>
           </div>
           <div class="portfolio-item">
             <h3>Secure To-Do App</h3>
@@ -173,8 +182,11 @@
               middleware and custom middleware to validate input.
             </p>
 
-            <a href="https://secure-todo-app.onrender.com" class="btn" target="_blank">View Project</a>
-            <a href="./Downloads/SecureToDoApp.zip" class="btn" download="SecureToDoApp.zip">Download Zip</a>
+            <div class="btn-container">
+              <a href="https://secure-todo-app.onrender.com" class="btn" target="_blank">View Project</a>
+              <a href="https://github.com/RealDan1/secure-todo-app" class="btn" target="_blank">Frontend Repo</a>
+              <a href="https://github.com/RealDan1/secure-todo-app-backend" class="btn" target="_blank">Backend Repo</a>
+            </div>
           </div>
 
           <div class="portfolio-item">
@@ -182,7 +194,9 @@
             <p>
               A link to my github page with a repository of my entire personal coding history dating back to mid 2023.
             </p>
-            <a href="https://github.com/RealDan1" class="btn" target="_blank">Github</a>
+            <div class="btn-container">
+              <a href="https://github.com/RealDan1" class="btn" target="_blank">Github</a>
+            </div>
           </div>
         </div>
       </section>
@@ -210,18 +224,5 @@
     <footer>
       <p>&copy; 2024 Daneel Van Der Merwe. All rights reserved.</p>
     </footer>
-    <script>
-      function openTwoRepos(url1, url2) {
-        [url1, url2].forEach((url) => {
-          const a = document.createElement('a');
-          a.href = url;
-          a.target = '_blank';
-          a.rel = 'noopener noreferrer';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        });
-      }
-    </script>
   </body>
 </html>
