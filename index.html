@@ -211,12 +211,16 @@
       <p>&copy; 2024 Daneel Van Der Merwe. All rights reserved.</p>
     </footer>
     <script>
-      /**
-       * Opens two URLs in new tabs.
-       */
       function openTwoRepos(url1, url2) {
-        window.open(url1, '_blank');
-        setTimeout(() => window.open(url2, '_blank'), 0);
+        [url1, url2].forEach((url) => {
+          const a = document.createElement('a');
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        });
       }
     </script>
   </body>
