@@ -137,7 +137,13 @@
               installation.
             </p>
             <a href="https://mongodb-auto-k6sr.onrender.com/" class="btn" target="_blank">View Project</a>
-            <a href="./Downloads/carInventory.zip" class="btn" download="carInventory.zip">Download Zip</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="openTwoRepos('https://github.com/RealDan1/car-management-db-backend','https://github.com/RealDan1/car-management-database');return false;"
+            >
+              GitHub Repos
+            </a>
           </div>
           <div class="portfolio-item">
             <h3>Redux To-Do App</h3>
@@ -204,5 +210,14 @@
     <footer>
       <p>&copy; 2024 Daneel Van Der Merwe. All rights reserved.</p>
     </footer>
+    <script>
+      /**
+       * Opens two URLs in new tabs.
+       */
+      function openTwoRepos(url1, url2) {
+        window.open(url1, '_blank');
+        window.open(url2, '_blank');
+      }
+    </script>
   </body>
 </html>
