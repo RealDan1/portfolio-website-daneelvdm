@@ -144,16 +144,10 @@ h2 {
   margin-right: auto;
   margin-bottom: 32px;
 }
-/* old code */
-/* display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start; */
+
 .portfolio-item {
   display: flex;
-  flex-direction: column; /* stack header, text, and button‐container top→bottom */
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -178,11 +172,10 @@ h2 {
   display: inline-block;
 }
 .btn-container {
-  /* move button styling and width-shrink-flex behaviour to here (so that buttons still stretch wwidth wise to fit container but will retain current behaviour as is. allows for ALL buttons to be moved to the bottom of container(as a group - and retain stretch/line-wrap/flex behaviour, text and header stays stuck to top of portfolio-item container */
-  margin-top: auto; /* pushes this box down to the bottom of the card */
-  display: flex; /* make its children line up in a row */
+  margin-top: auto;
+  display: flex;
   flex-wrap: wrap;
-  /* space between buttons */
+
   justify-content: flex-end;
 }
 .btn:hover {
